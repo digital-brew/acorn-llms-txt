@@ -1,7 +1,7 @@
 {
   "name": "roots/acorn-llms-txt",
   "type": "package",
-  "description": "LLMs text processing package for Roots Acorn.",
+  "description": "Expose WordPress content through /llms.txt endpoints",
   "license": "MIT",
   "authors": [
     {
