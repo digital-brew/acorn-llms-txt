@@ -1,0 +1,34 @@
+{
+  "name": "roots/acorn-llms-txt",
+  "type": "package",
+  "description": "LLMs text processing package for Roots Acorn.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Roots",
+      "email": "team@roots.io"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Roots\\AcornLlmsTxt\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.2",
+    "league/html-to-markdown": "^5.1"
+  },
+  "extra": {
+    "acorn": {
+      "providers": [
+        "Roots\\AcornLlmsTxt\\Providers\\LlmsTxtServiceProvider"
+      ]
+    }
+  },
+  "require-dev": {
+    "laravel/pint": "^1.24"
+  },
+  "scripts": {
+    "test": "wp eval-file tests/wp-cli-test.php"
+  }
+}
