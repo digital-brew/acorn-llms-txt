@@ -71,7 +71,7 @@ class CacheInvalidator
         $this->invalidateCache($postId);
     }
 
-    protected function shouldInvalidateForPost(int $postId): bool
+    protected function shouldInvalidateForPost(int|string $postId): bool
     {
         $postType = get_post_type($postId);
         $configuredTypes = config('llms-txt.post_types', ['post', 'page']);
