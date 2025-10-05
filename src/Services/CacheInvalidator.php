@@ -38,7 +38,7 @@ class CacheInvalidator
         add_action('deleted_term', [$this, 'invalidateCache']);
     }
 
-    public function invalidateCache(?int $postId = null): void
+    public function invalidateCache(int|string|null $postId = null): void
     {
         // Only invalidate for configured post types
         if ($postId && ! $this->shouldInvalidateForPost($postId)) {
